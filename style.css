@@ -1,0 +1,484 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* About Me section icon styling */
+.about-sec h1 .fa-book-open {
+  font-size: 37px; /* Adjust icon size for About Me section */
+  margin-right: 6px;
+}
+/* Publications section icon styling */
+.publications-sec h1 .fa-rocket {
+  font-size: 37px; /* Icon size for Publications section */
+  margin-left: 6px; /* Space between text and icon */
+}
+
+/* Projects section icon styling */
+.project-sec h1 .fa-code {
+  font-size: 37px; /* Icon size for Projects section */
+  margin-left: 10px; /* Space between text and icon */
+}
+
+/* Contact section icon styling */
+.contact-sec h1 .fa-globe {
+  font-size: 36px; /* Icon size for Contact section */
+  margin-left: 24px; /* Space between text and icon */
+}
+
+
+
+/* Body Styling */
+body {
+  line-height: 1.6;
+  color: #333;
+  background: url('OIP.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Navigation Bar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Skills List */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the min-width to fit your design */
+  gap: 20px; /* Space between items */
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  text-align: center; /* Center text inside each column */
+}
+
+.skills-list li {
+  background-color: #f2f2f2; /* Light background for skills */
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+}
+
+.skills-list li:hover {
+  background-color: #ffa500; /* Hover color */
+  color: #fff;
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Navigation Links */
+.header .header-item a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.header .header-item a:hover {
+  color: #ffa500;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  padding: 0 20px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home .left .txt {
+  max-width: 50%; /* Ensure this takes up only half the width */
+}
+
+.home .left .txt p {
+  font-size: 20px;
+  color: #070707;
+  margin-bottom: 10px;
+}
+
+.home .left .txt h4 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.home .left .txt button {
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%; /* This occupies the remaining half of the container */
+}
+
+.image-container img {
+  width: 80%; /* Adjust this to make the image smaller */
+  height: auto;
+}
+
+
+
+/* Publications Section */
+.publications-sec {
+  padding: 80px 50px;
+  background-color: rgba(245, 245, 245, 0.8); /* Same background as other sections */
+  text-align: center;
+}
+
+.publications-sec .txt h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.publications-sec .main-box {
+  padding: 50px;
+  background-color: #f5f5f5; /* Light background like other sections */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.publications-sec .box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.publications-sec .box .txt {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+}
+
+
+/* Certificates Section */
+.certificates-sec {
+  padding: 80px 50px;
+  background-color: rgba(245, 245, 245, 0.8); /* Light background similar to other sections */
+  text-align: center;
+}
+
+.certificates-sec .txt h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.certificates-sec .main-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.certificates-sec .box {
+  background: linear-gradient(145deg, rgba(219, 173, 230, 0.8), rgba(173, 216, 230, 0.8)); /* Light blue background */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space between content */
+  height: 100%; /* Ensures all boxes have the same height */
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures content fits and aligns properly */
+  height: 100%;
+}
+
+.certificate-card h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.certificate-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.certificate-card p b {
+  font-weight: bold;
+}
+
+.certificate-card a {
+  display: inline-block;
+  background: linear-gradient(45deg, #0066cc, #004a99); /* Gradient background */
+  color: #fff;
+  padding: 6px 12px; /* Smaller padding */
+  border-radius: 4px; /* Smaller border-radius */
+  text-decoration: none;
+  font-size: 18px; /* Smaller font size */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow for proportionality */
+  max-width: 220px; /* Limit the button width */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.certificate-card a:hover {
+  background: linear-gradient(45deg, #004a99, #0066cc); /* Inverted gradient on hover */
+  transform: scale(1.02); /* Slightly smaller scale effect */
+}
+
+.certificate-card a i {
+  margin-left: 4px; /* Adjust margin for smaller button */
+}
+
+
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.home .left .txt button:hover {
+  background-color: #ff8c00;
+}
+
+.home .right img {
+  max-width: 100%;
+}
+
+/* About Me Section */
+/* About Section Styles */
+.about-sec {
+  padding: 40px 20px;
+  background: #f0f0f0; /* Light grey background */
+}
+
+.about-background {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff; /* White background for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.txt h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.txt p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify; /* Justify text alignment */
+  margin: 0;
+  padding: 0 10px; /* Padding for readability */
+}
+
+/* Skills Section */
+.skills-sec {
+  padding: 80px 50px;
+  background-color: rgba(245, 245, 245, 0.8);
+  text-align: center;
+}
+
+.skills-sec .txt h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Projects Section */
+.project-sec {
+  padding: 80px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.project-sec .txt h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-sec .main-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.project-sec .box {
+  width: 45%;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+}
+
+.project-sec .box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.project-sec .box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-sec .box .txt h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  color: #333;
+}
+
+.project-sec .box .txt p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-sec {
+  padding: 80px 50px;
+  background-color: rgba(245, 245, 245, 0.8);
+  text-align: center;
+}
+
+.contact-sec .txt h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-sec .txt p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.contact-sec .txt a {
+  color: #080600;
+  text-decoration: none;
+}
+
+.contact-sec .txt a:hover {
+  color: #0c0a0b; /* Change text color to white on hover */
+  text-decoration: underline;
+}
+
+.contact-sec {
+  padding: 20px;
+}
+
+.contact-sec .txt {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 20px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+.foot-sec {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.foot-sec .txt p {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home {
+      flex-direction: column;
+      padding: 50px 20px;
+  }
+
+  .home .right img {
+      width: 100%;
+  }
+
+  .project-sec .main-box {
+      flex-direction: column;
+  }
+
+  .project-sec .box {
+      width: 100%;
+  }
+
+  .header {
+      padding: 20px;
+  }
+}

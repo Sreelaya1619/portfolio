@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 Welcome to my GitHub portfolio repository! This repository is a central hub for showcasing my work, skills, and achievements as I progress in my career as a Computer Science professional.
 
@@ -13,7 +13,7 @@ Welcome to my GitHub portfolio repository! This repository is a central hub for 
 
 ## About Me
 
-Hi, I'm Sreelaya R, a Computer Science graduate from PSG College of Arts and Science. My journey in technology is driven by a passion for learning and a desire to make impactful contributions through my work. 
+Hi, I'm Sreelaya R, a Computer Science graduate from PSG College of Arts and Science. My journey in technology is driven by a passion for learning and a desire to make impactful contributions through my work.
 
 ## Projects
 
@@ -41,6 +41,6 @@ Feel free to connect with me through the following:
 
 - **Email:** sreelaya1619@gmail.com
 - **GitHub:** [Sreelaya1619](https://github.com/Sreelaya1619)
+- **LinkedIn:** [Sreelaya R](https://www.linkedin.com/in/sreelaya-r)
 
 Thank you for visiting my portfolio. I look forward to connecting with you!
-
